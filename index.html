@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    
+    <title>EMS</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div id="logo"><img src="./Images/EMS.svg" alt="logo" /></div>
+          <div id="nav-items">
+            <ul>
+              <li class="nav-links"><a href="#intro">Intro</a></li>
+              <li class="nav-links"><a href="#about">About</a></li>
+              <li class="nav-links"><a href="#shop">Shop</a></li>
+            </ul>
+          </div>
+
+          <div id="cartDiv" >
+            <div id="cart"><img src="./Images/cart.svg" alt="cart" /></div>
+            <span id="cartCounter">0</span>
+          </div>
+        </nav>
+      </div>
+
+      <div class="modal ">
+        <div class="modal-content">
+          <table id="myTable">
+            <tr>
+              <th>S/N</th>
+              <th>Item</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Quantity</th>
+              <!-- <th>Total</th> -->
+            </tr>
+            <!-- <tr>
+              <td>1</td>
+              <td>xbox</td>
+              <td>1200</td>
+              <td>
+                <span id="sub" class="cart-btn dec">-</span>3<span
+                  class="cart-btn inc"
+                  >+</span
+                >
+              </td>
+              <td><button id="remove">remove</button></td>
+            </tr>  -->
+          </table>
+          <div class="userInfo-form">
+            <input type="text" placeholder="name" id="name" />
+            <p id="nameError"></p>
+            <input type="text" placeholder="email" id="email" />
+            <p id="emailError"></p>
+            <input type="tel" size="11" placeholder="Phone Number" id="pnumber"  pattern="[0-9]{3}"/>
+            <p id="phoneError"></p>
+          </div>
+          
+          <div class="totalAmtDiv">
+            <h3>Total Amount to be Paid</h3>
+            <h2 id="total"><span>&#8358</span><span id="checkOutTotal">0</span></h2>
+          </div>
+
+          <div class="btnDiv">
+            <button class="btn" id="continue">Continue Shopping</button>
+            <button class="btn" id="check-out">Check Out</button>
+          </div>
+        </div>
+      </div>
+       
+      <div class="modal summary-modal">
+        <div class="modal-content">
+           <div class="summary">
+             <h4 id="thankYouMsg"></h4>
+             <div class="checked">
+               <img src="./Images/check.svg" alt="Check">
+             </div>
+             <h3 id="summary">Summary</h3>
+             <table class="summaryTable1">
+               <tbody>
+                 <tr>
+                   <th>S/N</th>
+                   <th>Item</th>
+                   <th>Quantity</th>
+                 </tr>
+               </tbody> 
+             </table>
+             <table class="summaryTable">
+              </tbody> 
+            </table>
+            <button class="btn" id="closeSummary">Close and Clear Cart</button>
+           </div>
+          </div>
+          </div>
+
+
+      <div class="container">
+        <div id="main-hero">
+          <h1>
+            THE<br />
+            E-MILENNIAL <br />STORE
+          </h1>
+          <div id="main-hero-img">
+            <img src="./Images/heroImage.png" alt="" />
+          </div>
+        </div>
+        <button class="shop-now"><a href="#shop">Shop Now</a><button>
+      </div>
+    </header>
+    <section class="#about" id="about">
+      <div class="container">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          modi omnis aspernatur fuga recusandae doloremque ipsam saepe, quis
+          rerum officiis sequi corrupti explicabo quas quam excepturi, natus
+          nisi nihil. Necessitatibus enim eveniet sed cumque impedit minus magni
+          saepe iusto aut velit modi consequatur itaque, deserunt amet ab!
+        </p>
+      </div>
+    </section>
+    <section id="shop">
+      <div class="container">
+        <h1>OUR PRODUCTS</h1>
+        <div class="product-container">
+          <div class="productcard" id="p1">
+            <div class="productImg">
+              <img src="./Images/product1.png" alt="" />
+              <div class="product-price-div">
+                <span>&#8358</span>
+                <p class="price">5000</p>
+              </div>
+            </div>
+             <h3 class="product-name">Samsung TV</h3>
+            <button class="product-btn addToCart">ADD TO CART</button>
+          </div>
+
+          <div class="productcard" id="p2">
+            <div class="productImg">
+              <img src="./Images/product2.png" alt="" />
+              <div class="product-price-div">
+                <span>&#8358</span>
+                <p class="price">2600</p>
+              </div>
+            </div>
+            <h3 class="product-name">Pixel 4a</h3>
+            <button class="product-btn addToCart">ADD TO CART</button>
+          </div>
+
+
+          <div class="productcard" id="p3">
+            <div class="productImg">
+              <img src="./Images/product3.png" alt="" />
+              <div class="product-price-div">
+                <span>&#8358</span>
+                <p class="price">4000</p>
+              </div>
+            </div>
+            <h3 class="product-name">PS 5</h3>
+            <button class="product-btn addToCart">ADD TO CART</button>
+          </div>
+
+          <div class="productcard" id="p4">
+            <div class="productImg">
+              <img src="./Images/product4.png" alt="" />
+              <div class="product-price-div">
+                <span>&#8358</span>
+                <p class="price">8000</p>
+              </div>
+              </div>
+            <h3 class="product-name">Macbook Air</h3>
+            <button class="product-btn addToCart">ADD TO CART</button>
+          </div>
+
+          <div class="productcard" id="p5">
+            <div class="productImg">
+              <img src="./Images/product5.png" alt="" />
+              <div class="product-price-div">
+                <span>&#8358</span>
+                <p class="price">9000</p>
+              </div>
+            </div>
+            <h3 class="product-name">Apple Watch</h3>
+            <button class="product-btn addToCart">ADD TO CART</button>
+          </div>
+
+          <div class="productcard" id="p6">
+            <div class="productImg">
+              <img src="./Images/product6.png" alt="" />
+              <div class="product-price-div">
+                <span>&#8358</span>
+                <p class="price">7000</p>
+              </div>
+            </div>
+            <h3 class="product-name">Air Pods</h3>
+            <button class="product-btn addToCart">ADD TO CART</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="container">
+        <div class="footer-cont">
+          <img src="./Images/EMS.svg" alt="" />
+          <p>Designed and created by Aljaaiz</p>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js" async></script> 
+    <script src="https://js.paystack.co/v1/inline.js"></script> 
+  </body>
+</html>
