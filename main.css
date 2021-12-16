@@ -565,7 +565,7 @@ table {
   background-image: url(./Images/signup.jpg);
   background-size: cover;
   background-position: center;
-  height: 200px;
+  min-height: 200px;
   /* width: 100%; */
   margin-bottom: 80px;
 }
@@ -751,6 +751,32 @@ footer span {
     grid-template-columns: 1fr;
     gap: 1em;
   }
+.product-name {
+  font-weight: bolder;
+  text-transform: uppercase;
+font-size: .8em;
+  margin: 10px;
+}
+
+#signup__section-container h6 {
+  font-size: 1.5em;
+  text-align: start;
+  font-family: var(--poppins);
+}
+#signup__section-container input{
+margin-bottom: 1em;
+width: 320px;
+}
+#signup__section-container p{
+font-size: .8em;
+}
+#signup__section-container button{
+padding: 10px 20px;
+}
+.product-btn{
+font-size: .7em;
+font-weight: bolder;
+}
   .footer-cont {
     text-align: start;
     /* background: red; */
