@@ -566,7 +566,7 @@ table {
   background-size: cover;
   background-position: center;
   height: 200px;
-  width: 100%;
+  /* width: 100%; */
   margin-bottom: 80px;
 }
 #signup-section + div {
@@ -590,13 +590,15 @@ table {
   margin-bottom: 1em;
   background: #fff;
   object-fit: cover;
+  word-wrap: normal;
 }
 #email__input-box {
   display: flex;
+  flex-wrap: wrap;
 }
 #signup__section-container input {
   height: 50px;
-  width: 400px;
+  /* width: 400px; */
   margin-right: 1em;
   border: none;
   padding: 0 10px;
@@ -765,12 +767,14 @@ footer span {
 
 @media screen and (max-width: 760px) {
   .container {
-    padding: 0 20px;
+    padding: 10px 20px;
   }
   header {
     background-color: #f7e0cb;
   }
-
+  nav {
+    padding: 20px 40px;
+  }
   #nav-items ul li {
     display: inline-block;
     padding: 0 5px;
@@ -779,8 +783,10 @@ footer span {
     text-align: center;
   }
   #main-hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.3em;
     text-align: center;
+    line-height: 1em;
+}
   }
   .latest__main-box > div {
     max-height: 100%;
