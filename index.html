@@ -4,35 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="main.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@400;800&display=swap"
-      rel="stylesheet"
-    />
-    
     <title>EMS</title>
   </head>
   <body>
+
     <header>
-      <div class="container">
         <nav>
-          <div id="logo"><img src="./Images/EMS.svg" alt="logo" /></div>
+        <div class="container">
           <div id="nav-items">
             <ul>
               <li class="nav-links"><a href="#intro">Intro</a></li>
               <li class="nav-links"><a href="#about">About</a></li>
               <li class="nav-links"><a href="#shop">Shop</a></li>
             </ul>
-          </div>
+          
+          <div class="site-branding" id="logo"></div>
+         
 
-          <div id="cartDiv" >
-            <div id="cart"><img src="./Images/cart.svg" alt="cart" /></div>
+          <div id="cartDiv">
+            <span id="cart"></span>
             <span id="cartCounter">0</span>
           </div>
+</div>
+        </div>
         </nav>
-      </div>
+      
 
       <div class="modal ">
         <div class="modal-content">
@@ -108,27 +109,80 @@
       <div class="container">
         <div id="main-hero">
           <h1>
-            THE<br />
-            E-MILENNIAL <br />STORE
+            The<br />
+            e-millenail <br />store
           </h1>
-          <div id="main-hero-img">
-            <img src="./Images/heroImage.png" alt="" />
-          </div>
+          <a class="shop-now" href="#shop">Shop Now</a>
         </div>
-        <button class="shop-now"><a href="#shop">Shop Now</a><button>
       </div>
     </header>
-    <section class="#about" id="about">
-      <div class="container">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-          modi omnis aspernatur fuga recusandae doloremque ipsam saepe, quis
-          rerum officiis sequi corrupti explicabo quas quam excepturi, natus
-          nisi nihil. Necessitatibus enim eveniet sed cumque impedit minus magni
-          saepe iusto aut velit modi consequatur itaque, deserunt amet ab!
-        </p>
+
+  <!-- LASTEST SECTION -->
+<section id="latest" style="margin: 80px 0;">
+<div class="container">
+  <div class="latest__main-box">
+    <div class="latest__box-item ">
+      <div class="img-box box-item-1">
       </div>
-    </section>
+      <div class="inner__content">
+        <h4>Find More <br>Products <br>Here</h4>
+        <a href="#">See more</a>
+      </div>
+    </div>
+  
+<div class="latest__box-item box-item-2">
+  <div class="img-box box-item-2">
+    </div>
+      <div class="percentage__inner-content">
+        <h6>2 Days only</h6>
+        <h4>25%<br>off Everything</h4>
+        <p>END SUNDAY 5 JANUARY</p>
+        <a href="#">Shop now</a>
+      </div>
+  </div>
+
+  <div class="latest__box-item ">
+    <div class="img-box box-item-3">
+    </div>
+    <div class="inner__content">
+      <h4>New Arrivals</h4>
+      <a style="color: #ffff;" href="#">shop now</a>
+    </div>
+  </div>
+  </div>
+  </div>
+</section>
+
+<section id="exclusive">
+  <div class="container">
+    <div class="exlcusive__main-box">
+      <div class="exclusive__box-item ">
+        <div class="exclusive__image-box exclusive__image-box-1">
+        </div>
+          <div class="exclusive__inner--content">
+          <h6>exclusive Bundles</h6>
+          <a href="#">see more collection</a>
+        </div>
+      </div>
+
+
+      <div class="exclusive__box-item ">
+        <div class="exclusive__image-box exclusive__image-box-2">
+        </div>
+          <div class="exclusive__inner--content">
+          <h6>exclusive<br> offers</h6>
+          <a href="#">see more collection</a>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
+
+
+
+
     <section id="shop">
       <div class="container">
         <h1>OUR PRODUCTS</h1>
@@ -205,16 +259,129 @@
             <h3 class="product-name">Air Pods</h3>
             <button class="product-btn addToCart">ADD TO CART</button>
           </div>
+          <div class="productcard" id="p7">
+            <div class="productImg">
+              <img src="./Images/product7.jpg" alt="" />
+              <div class="product-price-div">
+                <span>&#8358</span>
+                <p class="price">2000</p>
+              </div>
+            </div>
+            <h3 class="product-name">Phone cover</h3>
+            <button class="product-btn addToCart">ADD TO CART</button>
+          </div>
+          <div class="productcard" id="p8">
+            <div class="productImg">
+              <img src="./Images/product8.jpg" alt="" />
+              <div class="product-price-div">
+                <span>&#8358</span>
+                <p class="price">6000</p>
+              </div>
+            </div>
+            <h3 class="product-name">Phone charger</h3>
+            <button class="product-btn addToCart">ADD TO CART</button>
+          </div>
+          <div class="productcard" id="p9">
+            <div class="productImg">
+              <img src="./Images/product9.jpg" alt="" />
+              <div class="product-price-div">
+                <span>&#8358</span>
+                <p class="price">7000</p>
+              </div>
+            </div>
+            <h3 class="product-name">Air Pods</h3>
+            <button class="product-btn addToCart">ADD TO CART</button>
+          </div>
+          <div class="productcard" id="p6">
+            <div class="productImg">
+              <img src="./Images/product6.png" alt="" />
+              <div class="product-price-div">
+                <span>&#8358</span>
+                <p class="price">7000</p>
+              </div>
+            </div>
+            <h3 class="product-name">Air Pods</h3>
+            <button class="product-btn addToCart">ADD TO CART</button>
+          </div>
+          <div class="productcard" id="p6">
+            <div class="productImg">
+              <img src="./Images/product6.png" alt="" />
+              <div class="product-price-div">
+                <span>&#8358</span>
+                <p class="price">5000</p>
+              </div>
+            </div>
+            <h3 class="product-name">Samsung Charger</h3>
+            <button class="product-btn addToCart">ADD TO CART</button>
+          </div>
+          <div class="productcard" id="p6">
+            <div class="productImg">
+              <img src="./Images/product6.png" alt="" />
+              <div class="product-price-div">
+                <span>&#8358</span>
+                <p class="price">7000</p>
+              </div>
+            </div>
+            <h3 class="product-name">Air Pods</h3>
+            <button class="product-btn addToCart">ADD TO CART</button>
+          </div>
         </div>
       </div>
     </section>
 
+      <section id="signup-section">
+        <div class="container" style="display: flex;justify-content: start;align-items: center;height: 100%;">
+        <div id="signup__section-container">
+          <h6>Sign up of for Weekly Discount</h6>
+          <p> sit amet consectetur adipisicing elit. Aliquid, labore eos? Debitis optio ab eos.</p>
+          <div id="email__input-box">
+
+            <input type="email" placeholder="Your email Address">
+            <button>Subscribe</button>
+          </div>
+        </div>
+        </div>
+      </section>
 
     <footer>
       <div class="container">
         <div class="footer-cont">
-          <img src="./Images/EMS.svg" alt="" />
-          <p>Designed and created by Aljaaiz</p>
+          <div>
+            <img src="./Images/logo_white.svg" alt="" height="40px" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing, sed do eiusmod tempor incididunt.</p>
+          </div>
+      
+          <div>
+            <h6>CUSTOMER SERVICES</h6>
+            <ul>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Order Tracking</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </div>
+          <div>
+            <h6>Company</h6>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Our Blog</a></li>
+      
+            </ul>
+          </div>
+
+          <div>
+            <h6>ADDRESS</h6>
+            9606 North MoPac Expressway Suite 700 Austin, TX 78759
+            <span>PHONE:</span>+1 248-785-8545
+            <span>FAX</span>
+            <span>123123123
+            <span>EMAIL:</span>
+            ems@google.com
+            <span>WEBSITE:</span>http:jamiuademola.com
+          </div>
         </div>
       </div>
     </footer>
