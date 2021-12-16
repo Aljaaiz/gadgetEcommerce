@@ -588,7 +588,7 @@ table {
 }
 #signup__section-container p {
   margin-bottom: 1em;
-  background: #fff;
+  /* background: #fff; */
   object-fit: cover;
   word-wrap: normal;
 }
@@ -715,7 +715,7 @@ footer img {
   list-style: none;
 }
 .footer-cont ul li {
-  padding: 10px 0;
+  padding: 5px 0;
   text-align: start;
 }
 .footer-cont ul li a {
@@ -726,7 +726,7 @@ footer span {
   font-weight: bolder;
   font-size: 0.8em;
   display: block;
-  margin: 1em 0;
+  margin: .5em 0;
 }
 @media screen and (max-width: 960px) {
   #id_ul {
