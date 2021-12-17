@@ -350,4 +350,8 @@ function payWithPaystack() {
   handler.openIframe();
 }
 
-//Remove Item from Cart
+//
+window.addEventListener('scroll', function (e) {
+  let nav = document.querySelector('nav')
+  nav.classList.toggle("sticky", window.scrollY > 0)
+})
