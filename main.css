@@ -71,13 +71,39 @@ nav:hover #cartDiv {
 #cartDiv img {
   width: 35px;
 }
-.hamburger {
+.hamburger-white {
   background: url(./Images/icon-hamburger.svg);
-  height: 25px;
-  width: 30px;
+  height: 20px;
+  width: 40px;
+}
+.hamburger-dark {
+  background: url(./Images/icon-hamburger-dark.svg);
+  height: 20px;
+  width: 40px;
+  display: none;
+}
+nav.sticky .site-branding {
+  height: 40px;
+  background-image: url(./Images/logo_black.svg);
+  background-repeat: no-repeat;
 }
 
-nav:hover #cart {
+nav.sticky .hamburger-dark {
+  display: block;
+}
+nav.sticky .hamburger-white {
+  display: none;
+}
+nav:hover .hamburger-dark {
+  display: block;
+}
+nav:hover .hamburger-white {
+  display: none;
+}
+nav:hover .hamburger-white {
+  background-image: url(./Images/cart_dark.svg);
+}
+nav.sticky #cart {
   background-image: url(./Images/cart_dark.svg);
   background-size: cover;
   height: 25px;
