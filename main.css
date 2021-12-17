@@ -19,7 +19,7 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
-  /* padding: 40px 0; */
+  padding: 0px 30px;
 }
 
 header {
@@ -71,6 +71,12 @@ nav:hover #cartDiv {
 #cartDiv img {
   width: 35px;
 }
+.hamburger {
+  background: url(./Images/icon-hamburger.svg);
+  height: 25px;
+  width: 30px;
+}
+
 nav:hover #cart {
   background-image: url(./Images/cart_dark.svg);
   background-size: cover;
@@ -583,21 +589,28 @@ nav.sticky #cartDiv {
   background-image: url(./Images/signup.jpg);
   background-size: cover;
   background-position: center;
-  min-height: 200px;
-  /* width: 100%; */
+  /* min-height: 250px; */
   margin-bottom: 80px;
+  padding: 40px 0;
 }
-#signup-section + div {
-  position: relative;
-  background: #000;
+#signup-section > .container {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative; */
 }
 #signup__section-container {
-  display: flex;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%); */
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
   flex-wrap: wrap;
-  text-align: start;
+  text-align: start; */
 }
 #signup__section-container h6 {
   font-size: 2em;
@@ -605,8 +618,8 @@ nav.sticky #cartDiv {
   font-family: var(--poppins);
 }
 #signup__section-container p {
+  text-align: start;
   margin-bottom: 1em;
-  /* background: #fff; */
   object-fit: cover;
   word-wrap: normal;
 }
@@ -616,7 +629,7 @@ nav.sticky #cartDiv {
 }
 #signup__section-container input {
   height: 50px;
-  /* width: 400px; */
+  width: 400px;
   margin-right: 1em;
   border: none;
   padding: 0 10px;
@@ -628,6 +641,7 @@ button {
   outline: none;
 }
 #signup__section-container button {
+  height: 50px;
   border: none;
   width: 150px;
   text-transform: uppercase;
