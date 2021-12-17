@@ -88,7 +88,7 @@ function addToCart() {
           <button class="increase qtdBtn">+</button>
         </td>
         <td class="item-total">${productObj.price}</td>
-        <td><button  class="remove">remove</button></td>`;
+        <td><button  class="remove">X</button></td>`;
     tr.className = "cartTr";
     event.target.textContent = "REMOVE FROM CART";
 

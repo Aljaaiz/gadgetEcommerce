@@ -179,9 +179,11 @@ td {
   text-align: center;
 }
 
-td #remove {
-  padding: 5px 10px;
-  background: #000;
+.remove {
+  border: none;
+  background: orange;
+  padding: 5px;
+  color: #ffff;
 }
 
 .item-total {
