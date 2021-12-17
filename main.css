@@ -122,13 +122,12 @@ nav img {
   counter-increment: item-counter;
   content: counter(item-counter);
 }
-.qtdBtn .cartQtdValue {
-  /* width: 25%; */
+.cartQtdValue {
   border: none;
+  width: 30px;
   height: 30px;
-  width: 35px;
+  display: inline-block;
   text-align: center;
-  padding: 5px 5px;
 }
 .cartQtdValue:focus {
   outline: none;
@@ -285,7 +284,7 @@ table {
 }
 .qtdBtn {
   height: 30px;
-  width: 30px;
+  width: 20px;
   border: none;
   background: orange;
   color: #ffff;

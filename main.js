@@ -84,7 +84,7 @@ function addToCart() {
         <td class="price"><span>&#8358</span>${productObj.price}</td>
         <td class= "quantity">
           <button class="decrease qtdBtn">-</button>
-          <input class="cartQtdValue" value="1"/>
+          <input class="cartQtdValue" readonly value="1"/>
           <button class="increase qtdBtn">+</button>
         </td>
         <td class="item-total">${productObj.price}</td>
