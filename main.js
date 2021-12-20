@@ -350,7 +350,18 @@ function payWithPaystack() {
   handler.openIframe();
 }
 
-//
+//MOBILE MENU
+let hamburger_div = document.getElementById('hamburger-div').addEventListener('click', function () {
+  let mobile_nav = document.getElementById('mobile-nav')
+  mobile_nav.classList.toggle('active')
+  let nav_items = document.querySelectorAll('.nav-links')
+  nav_items.forEach(item => {
+    item.addEventListener('click', function () {
+      mobile_nav.classList.remove('active')
+    })
+  })
+})
+//nav White background Add
 window.addEventListener('scroll', function (e) {
   let nav = document.querySelector('nav')
   nav.classList.toggle("sticky", window.scrollY > 0)

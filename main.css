@@ -28,14 +28,17 @@ header {
   background-image: url(./Images/hero_img.jpg);
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 80vh;
 }
-
+#hamburger-div {
+  cursor: pointer;
+}
 nav {
   position: fixed;
+  /* position: relative; */
   width: 100%;
   padding: 20px 20px;
-  z-index: 1000;
+  z-index: 1;
 
   -webkit-transition: background 0.4s ease-in-out;
   transition: background 0.4s ease-in-out;
@@ -156,6 +159,38 @@ nav img {
   width: 50px;
 }
 
+#hamburger {
+  cursor: pointer;
+  display: none;
+}
+
+#mobile-nav {
+  background: #000;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 80px;
+  left: 0px;
+  bottom: 0;
+  right: 0;
+  padding: 40px;
+  z-index: 20000;
+  transform: translateX(-2000px);
+  transition: all 0.4s ease-in-out;
+}
+#mobile-nav.active {
+  transform: translateX(0);
+}
+#mobile-nav li {
+  padding: 20px 0;
+  list-style: none;
+  text-transform: uppercase;
+}
+#mobile-nav li a {
+  color: #fff;
+
+  text-decoration: none;
+}
 #counter::before {
   counter-increment: item-counter;
   content: counter(item-counter);
@@ -239,6 +274,7 @@ td {
 
 .modal {
   display: none;
+  visibility: none;
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
@@ -272,6 +308,7 @@ td {
   /* Could be more or less, depending on screen size */
   text-align: center;
   border-radius: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
 .modal table {
@@ -289,10 +326,6 @@ td {
   font-family: var(--poppins);
   text-transform: uppercase;
   font-weight: bolder;
-}
-
-.modal table td {
-  /* border: solid orange; */
 }
 
 .modal-content .btn {
@@ -363,10 +396,6 @@ table {
 
 #summary {
   margin-bottom: 10px;
-}
-
-.userInfo-form {
-  /* background: #000; */
 }
 
 .userInfo-form p {
@@ -624,25 +653,7 @@ nav.sticky #cartDiv {
   margin-bottom: 80px;
   padding: 40px 0;
 }
-#signup-section > .container {
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  position: relative; */
-}
-#signup__section-container {
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 50%); */
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  flex-wrap: wrap;
-  text-align: start; */
-}
+
 #signup__section-container h6 {
   font-size: 2em;
   text-align: start;
@@ -799,6 +810,13 @@ footer span {
     grid-gap: 20px;
   }
 } */
+
+@media screen and (min-width: 970px) {
+  #mobile-nav {
+    transform: translateX(-2000px);
+    display: none;
+  }
+}
 @media screen and (max-width: 960px) {
   #hamburger-div {
     display: block;
