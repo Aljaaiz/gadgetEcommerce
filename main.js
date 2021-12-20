@@ -1,3 +1,12 @@
+window.addEventListener('load', () => {
+  let loader = document.getElementsByClassName('loader')[0]
+  loader.classList.remove('active')
+  console.log(loader);
+
+})
+
+
+
 let cartDiv = document.getElementById("cartDiv");
 let modal = document.querySelector(".modal");
 let name = document.getElementById("name");

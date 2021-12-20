@@ -17,6 +17,23 @@ body {
   overflow-x: hidden;
 }
 
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  z-index: -2000;
+  opacity: 0;
+}
+.loader.active {
+  z-index: 2000;
+  opacity: 1;
+}
 .container {
   max-width: 1000px;
   margin: 0 auto;
