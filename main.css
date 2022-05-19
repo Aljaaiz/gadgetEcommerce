@@ -316,7 +316,7 @@ td {
 }
 
 .modal-content {
-  background-color: #f1e6dc;
+  background-color: #ffff;
   margin: 5% auto;
   /* 15% from the top and centered */
   padding: 10px;
@@ -371,6 +371,7 @@ table {
   padding: 0px 10px;
   height: 40px;
   font-size: 1em;
+border:1px solid;
 }
 .qtdBtn {
   height: 30px;
@@ -965,7 +966,7 @@ footer span {
     padding: 10px;
   }
   .modal-content {
-    background-color: #fff;
+    background: #ffff;
     margin: 5% auto;
     /* 15% from the top and centered */
     padding: 20px;
